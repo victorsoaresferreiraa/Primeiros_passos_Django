@@ -30,10 +30,12 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    # My apps.
+    # minhas aolicações.
     'learning_logs',
     'accounts',
     
+    #Aplicações de terceiros
+    "django_bootstrap5",
 
     # Default django apps.
     'django.contrib.admin',
@@ -130,3 +132,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # My settings.
 LOGIN_REDIRECT_URL = 'learning_logs:index'
 LOGOUT_REDIRECT_URL = 'learning_logs:index'
+LOGIN_URL = 'accounts:login'
